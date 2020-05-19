@@ -1,1 +1,6 @@
-<div class="canvas checker"></div>
+<div class="canvas checker" (mousedown)="onMouseDown($event)" (mouseup)="onMouseUp($event)">
+  {{ pressed }}
+  <ng-container *ngFor="let layer of layers">
+    <app-flow-box [flowBoxLayer]="layer"></app-flow-box>
+  </ng-container>
+</div>
