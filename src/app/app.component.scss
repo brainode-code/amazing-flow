@@ -1,0 +1,52 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.canvas {
+  background: red;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+$checker-color: #e3e3e3;
+
+.checker {
+  background-color: #efefef;
+  background-image: linear-gradient(
+      45deg,
+      $checker-color 25%,
+      transparent 25%,
+      transparent 75%,
+      $checker-color 75%,
+      $checker-color
+    ),
+    linear-gradient(
+      45deg,
+      $checker-color 25%,
+      transparent 25%,
+      transparent 75%,
+      $checker-color 75%,
+      $checker-color
+    );
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
